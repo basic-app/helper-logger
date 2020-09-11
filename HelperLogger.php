@@ -8,8 +8,9 @@ namespace BasicApp\HelperLogger;
 
 use Psr\Log\LoggerTrait;
 use Psr\Log\LogLevel;
+use Psr\Log\AbstractLogger;
 
-class HelperLogger extends \Psr\Log\AbstractLogger
+class HelperLogger extends AbstractLogger
 {
 
     use LoggerTrait;
