@@ -7,8 +7,9 @@
 namespace BasicApp\HelperLogger;
 
 use Throwable;
+use Exception;
 
-class HelperLoggerException extends \Exception
+class HelperLoggerException extends Exception
 {
 
     public function __construct(string $message, array $context = [], int $code = 0, Throwable $previous = null)
